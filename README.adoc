@@ -34,6 +34,16 @@ Issue::
 Importance::
 Should
 
+=== 3 -- Personne 
+
+Description::
+Un objet Personne, qui peut se présenter et aller au travail
+
+Issue::
+
+Importance::
+Should
+
 [TIP]
 =====
 Nous utilisons ici la méthode {MoSCoW} d'estimation.
