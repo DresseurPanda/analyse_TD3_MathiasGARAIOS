@@ -45,11 +45,11 @@ public class Personne {
      */
     public void travailler(){
         if (!travail){
-            System.out.println(prenom + "va au travail !");
+            System.out.println(prenom + " va au travail !");
             travail = true ;
         }
         else{
-            System.out.println(prenom + "rentre du travail !");
+            System.out.println(prenom + " rentre du travail !");
             travail = false ;
         }
     }
