@@ -42,4 +42,42 @@ public class AppTest
     {
         assertEquals("Hello JMB!", App.hello("Hello JMB!"));
     }
+
+    public void testPersonneConstructeurParDefaut()
+    {
+        Personne p = new Personne();
+        assertEquals("Bob", p.prenom);
+        assertEquals("Pascal", p.nom);
+    }
+    public void testPersonneConstructeur()
+    {
+        Personne p = new Personne("Jean", "Michel");
+        assertEquals("Jean", p.nom);
+        assertEquals("Michel", p.prenom);
+    }
+
+    public void testTravail()
+    {
+        Personne p = new Personne("Jean", "Michel");
+        
+        p.travailler();
+        assertEquals(true, p.travail);
+    }
+
+    public void testPresenterQuandTravail() {
+    Personne p = new Personne();
+    p.travailler();
+
+    String expected = "Me déranger pas je bricole, -_-" ;
+    assertEquals(expected, p.presenter());
+    }
+
+    public void testPresenterQuandPasTravail() {
+        Personne p = new Personne("Jean", "Michel");
+
+        String expected = "Je suis " + "Michel" + "\n" + //
+                            "Je suis " + "Michel" + "\n" + //
+                            "Je suis " + "Michel" + ", je suis " + "Michel" + " " + "Jean";
+        assertEquals(expected, p.presenter());
+    }
 }
