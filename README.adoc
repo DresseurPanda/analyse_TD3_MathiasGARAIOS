@@ -40,6 +40,7 @@ Description::
 Un objet Personne, qui peut se présenter et aller au travail
 
 Issue::
+- https://github.com/DresseurPanda/analyse_TD3_MathiasGARAIOS/issues/2
 
 Importance::
 Should
